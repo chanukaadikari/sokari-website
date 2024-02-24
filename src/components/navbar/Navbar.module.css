@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+
+
+* {color: rgb(255, 255, 255);
+    box-sizing: border-box;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;;
+    height: 10vh;
+    align-items: center;
+    padding: 20px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    background-color: rgb(24,24,24);
+
+}
+
+.logo {
+    font-size: xx-large;
+    text-decoration: none;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+
+.menuItems {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    
+    
+}
+
+.itemDesign {
+    
+    text-decoration: none;
+    color:rgb(207, 206, 206) ;
+    
+}     
+
+ .itemDesign::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #FF5700;
+    display: block;
+    opacity: 0;
+    transition: all 0.2s;
+ }
+
+ .menuItems:hover .itemDesign {
+   
+    color: rgb(80, 80, 80);
+}
+
+.menuItems .itemDesign:hover {
+   
+   color: #ffffff;
+    
+} 
+
+ .itemDesign:hover::after {
+    opacity: 1;
+ }
+
+.leftSideNavBar {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    padding: 0px 20px;
+    background-color:#ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    width: max-content;
+    align-items: center;
+}
+
+.search:hover {
+    border: 1px solid black;
+}
+
+.searchInput { 
+   width: 180px;
+   height: 40px;
+   border-radius: 30px;
+   border: none;
+   outline: none; 
+   font-family: 'Roboto', sans-serif;
+   font-size: medium;
+   background: transparent;
+   
+}
+
+.searchInput::placeholder {
+    background-color: #ffffff;
+    color: black;
+    opacity: 0.5;
+}
+
+.wishList {
+    display: flex;
+    align-items:center;
+    text-decoration: none; 
+     
+}
+
+.wishList:hover {
+   text-decoration: underline;
+   border-radius: 100px; 
+   padding: 10px; 
+   background-color: #FF5700;
+}
+
+  
+
+.shoppingCart {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.shoppingCart:hover {
+    text-decoration: underline;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: #FF5700;
+    
+}
+ 
+
+
