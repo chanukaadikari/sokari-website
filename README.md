@@ -1,3 +1,6 @@
+# Sokari-website
+It's a website for a clothing brand. The brand name is Sokari.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
