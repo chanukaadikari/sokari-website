@@ -48,7 +48,7 @@ function Home() {
 
     <div>
       <h2>Women's Products</h2>
-      {womenProductsList.map(createWomenProducts)}
+      {womenProductsList.map(createWomenProducts).slice(0, 4)}
       <Link to="/women" >SEE MORE</Link>
     </div>
 
