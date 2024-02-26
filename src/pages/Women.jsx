@@ -6,8 +6,7 @@ import womenProductsList from '../components/product/women/womenProductsList'
 
 function createWomenProducts (womenProductsList) {
   return (
-    <WomenProducts 
-    key={womenProductsList.id}
+    <WomenProducts key={womenProductsList.id}
     img={womenProductsList.img}
     name={womenProductsList.name}
     price={womenProductsList.price}

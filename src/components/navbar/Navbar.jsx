@@ -22,6 +22,7 @@ function Navbar() {
                </li>
             </ul>
         </div>
+
         <div className={Styles.leftSideNavBar}>
             <div className={Styles.search}>
                <span className="material-symbols-outlined" style={{ color: 'black' }}>search</span>
@@ -29,8 +30,10 @@ function Navbar() {
                   <label htmlFor="search"></label>
                   <input className={Styles.searchInput} type="search" id="search" name="search" placeholder="SEARCH"/>   
                </form>
-            </div>               
+            </div>      
+                     
          <a className={Styles.wishList} href=""><span className="material-symbols-outlined">favorite</span></a>
+         
          <a className={Styles.shoppingCart} href=""><span className="material-symbols-outlined">shopping_cart</span></a>
         </div>
      </nav>
