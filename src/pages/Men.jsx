@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import MenProducts from '../components/product/men/MenProducts'
 import menProductsList from '../components/product/men/menProductsList'
+import Footer from '../components/about/Footer'
 
 function createMenProducts (menProductList) {
    
@@ -22,6 +23,7 @@ function Men() {
     <>
     <Navbar />
     {menProductsList.map(createMenProducts)}
+    <Footer />
     </>
   )
 }

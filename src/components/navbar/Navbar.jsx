@@ -1,6 +1,8 @@
 import React from "react";
 import Styles from "./Navbar.module.css"
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom' 
+import { Link as ScrollLink } from 'react-scroll';
+
 
 function Navbar() {
   return (   
@@ -18,7 +20,7 @@ function Navbar() {
                   <Link className={Styles.itemDesign} to="/kids">Kids</Link>
                </li>
                <li>
-                  <Link className={Styles.itemDesign} to="/Aboutus">About Us</Link>
+                  <ScrollLink className={Styles.itemDesign} to="about" spy={true} smooth={true} offset={50} duration={1000}>About Us</ScrollLink>
                </li>
             </ul>
         </div>

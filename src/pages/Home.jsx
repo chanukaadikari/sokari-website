@@ -7,6 +7,8 @@ import MenProducts from '../components/product/men/MenProducts'
 import menProductList from '../components/product/men/menProductsList'
 import KidsProducts from '../components/product/kids/KidsProducts'
 import KidsProductList from '../components/product/kids/kidsProductsList'
+import Footer from '../components/about/Footer'
+
 
 function createWomenProducts (womenProductsList) {
   return (
@@ -45,7 +47,7 @@ function Home() {
   return (
     <>
     <Navbar />
-
+   
     <div>
       <h2>Women's Products</h2>
       {womenProductsList.map(createWomenProducts).slice(0, 4)}
@@ -54,7 +56,7 @@ function Home() {
 
     <div>
       <h2>Men's Products</h2>
-      {menProductList.map(createmenProducts)}
+      {menProductList.map(createmenProducts).slice(0, 4)}
       <Link to="/men" >SEE MORE</Link>
     </div>
 
@@ -63,6 +65,8 @@ function Home() {
       {KidsProductList.map(createkidsProducts)}
       <Link to="/kids" >SEE MORE</Link> 
     </div>
+    
+    <Footer />
 
     </>
   )
