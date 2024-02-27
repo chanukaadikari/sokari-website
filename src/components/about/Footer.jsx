@@ -6,17 +6,17 @@ function Footer () {
       <footer id='about'> 
 
         <div>
-            <Link to="">Our Cmpany</Link>
+            <Link to="/aboutus">Our Cmpany</Link>
             <Link to="">Contact Us</Link> 
             <a href="">INSTERGRAM</a>
             <a href="">FACEBOOK</a>
         </div>
 
         <div>
-            <Link to="">Privercy Policy</Link>
-            <Link to="">Delivery Policy</Link>
-            <Link to="">Return & Exchange Policy</Link>
-            <Link to="" >Terms and Conditions</Link>  
+            <Link to="/policy">Privercy Policy</Link>
+            <Link to="/policy">Delivery Policy</Link>
+            <Link to="/policy">Return & Exchange Policy</Link>
+            <Link to="/policy" >Terms and Conditions</Link>  
         </div>
 
       </footer>  

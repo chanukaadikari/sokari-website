@@ -46,27 +46,35 @@ function createkidsProducts (kidsProductsList) {
 function Home() {
   return (
     <>
-    <Navbar />
-   
-    <div>
-      <h2>Women's Products</h2>
-      {womenProductsList.map(createWomenProducts).slice(0, 4)}
-      <Link to="/women" >SEE MORE</Link>
-    </div>
-
-    <div>
-      <h2>Men's Products</h2>
-      {menProductList.map(createmenProducts).slice(0, 4)}
-      <Link to="/men" >SEE MORE</Link>
-    </div>
-
-    <div>
-      <h2>Kid's Products</h2>
-      {KidsProductList.map(createkidsProducts)}
-      <Link to="/kids" >SEE MORE</Link> 
-    </div>
+    <header>
+      <Navbar />
+    </header>
     
-    <Footer />
+    <main>
+
+      <section>
+         <h2>Women's Products</h2>
+         {womenProductsList.map(createWomenProducts).slice(0, 4)}
+        <Link to="/women" >SEE MORE</Link>
+      </section>
+
+      <section>
+         <h2>Men's Products</h2>
+          {menProductList.map(createmenProducts).slice(0, 4)}
+         <Link to="/men" >SEE MORE</Link>
+      </section>
+
+      <section>
+         <h2>Kid's Products</h2>
+         {KidsProductList.map(createkidsProducts)}
+         <Link to="/kids" >SEE MORE</Link> 
+      </section>
+      
+    </main>
+    
+    <footer>
+      <Footer />
+    </footer>
 
     </>
   )

@@ -11,7 +11,6 @@ function createKidsProduct (KidsProductList) {
       name={KidsProductList.name}
       price={KidsProductList.price}
     />
-
   </>
 }
 

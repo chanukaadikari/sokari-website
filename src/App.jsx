@@ -5,6 +5,7 @@ import Women from './pages/Women';
 import Men from './pages/Men';
 import Kids from './pages/Kids';
 import AboutUs from './pages/AboutUs';
+import Policy from './pages/Policy';
 
 function App () {
 
@@ -15,6 +16,7 @@ function App () {
       <Route path='/men' element={<Men />} />
       <Route path='/kids' element={<Kids />} />
       <Route path='/aboutus' element={<AboutUs />} />
+      <Route path='/policy' element={<Policy />} />
     </Routes>
   )
   
