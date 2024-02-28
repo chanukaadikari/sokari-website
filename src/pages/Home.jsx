@@ -63,23 +63,23 @@ function Home() {
 
     <main className={Style.gridContainer}>
 
-      <section>
-         <h2>Women's Products</h2>
-         {womenProductsList.map(createWomenProducts).slice(0, 4)}
-        <Link to="/women" >SEE MORE</Link>
+      <section className={Style.gridItems}>
+          <h2 className={Style.heading} >Women's Collection</h2>
+          {womenProductsList.map(createWomenProducts).slice(0, 5)}
+          <Link className={Style.seeMore} to="/women" >SEE MORE</Link>          
       </section>
 
-      <section>
-         <h2>Men's Products</h2>
-          {menProductList.map(createmenProducts).slice(0, 4)}
-         <Link to="/men" >SEE MORE</Link>
-      </section>
+      <section className={Style.gridItems}>
+         <h2 className={Style.heading}>Men's Collection</h2>
+          {menProductList.map(createmenProducts).slice(0, 5)}
+         <Link className={Style.seeMore} to="/men" >SEE MORE</Link>
+      </section> 
 
-      <section>
-         <h2>Kid's Products</h2>
-         {KidsProductList.map(createkidsProducts)}
-         <Link to="/kids" >SEE MORE</Link> 
-      </section>
+      <section className={Style.gridItem}>
+         <h2 className={Style.heading}>Kid's Collection</h2>
+         {KidsProductList.map(createkidsProducts).slice(0, 5)}
+         <Link className={Style.seeMore} to="/kids" >SEE MORE</Link> 
+      </section> 
       
     </main>
     

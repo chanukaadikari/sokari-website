@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import KidsProductList from '../components/product/kids/kidsProductsList'
 import KidsProducts from '../components/product/kids/KidsProducts'
+import Footer from '../components/about/Footer'
 
 function createKidsProduct (KidsProductList) {
   return <>
@@ -17,7 +18,8 @@ function createKidsProduct (KidsProductList) {
 function Kids() {
   return ( <>
    <Navbar />
-   {KidsProductList.map(createKidsProduct)} 
+   {KidsProductList.map(createKidsProduct)}
+   <Footer />
   </>
   )
 }

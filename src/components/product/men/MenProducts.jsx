@@ -1,14 +1,16 @@
 import React from 'react-dom'
-import Style from './menProducts.module.css'
+import Style from './MenProducts.module.css'
 
 function MenProducts (props) {
 
     return (
         <>
-          <img className={Style.menProducts} src={props.img} alt="Men Products" />
+        <div className={Style.menProducts}>
+          <img className={Style.productImg} src={props.img} alt="Men Products" />
           <p>{props.name}</p>
           <p>{props.price}</p>
           <span className="material-symbols-outlined">favorite</span>
+        </div>
         </>
     )
 }

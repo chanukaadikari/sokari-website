@@ -21,7 +21,7 @@ function Navbar() {
                </li>
                <li>
                   <ScrollLink className={Styles.itemDesign} to="about" spy={true} smooth={true} offset={50} duration={1000}>About Us</ScrollLink>
-               </li> {/* 'About' is scroll Id*/}
+               </li> {/* 'About' is a scroll Id to scroll navbar to Footer*/}
             </ul>
         </div>
 

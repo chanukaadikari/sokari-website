@@ -1,6 +1,14 @@
 
-.womenProduct {
-    height: 400px;
-    width: 300px;
+.WomenProducts {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 25px 0px 25px 80px;    
 }
+
+.productImg {
+    height: 300px;
+    width: 200px;
+}
+
 
