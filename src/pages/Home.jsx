@@ -8,6 +8,7 @@ import menProductList from '../components/product/men/menProductsList'
 import KidsProducts from '../components/product/kids/KidsProducts'
 import KidsProductList from '../components/product/kids/kidsProductsList'
 import Footer from '../components/about/Footer'
+import Style from '../pages/Home.module.css'
 
 
 function createWomenProducts (womenProductsList) {
@@ -50,7 +51,17 @@ function Home() {
       <Navbar />
     </header>
     
-    <main>
+    <section className={Style.imgContainer}>
+
+        <div className={Style.overlay}></div>
+        <div className={Style.photo}></div>
+        <div className={Style.text}>
+        <p>Dress uniquely, express confidently, and let style define you beautifully</p>
+        </div>
+
+    </section>
+
+    <main className={Style.gridContainer}>
 
       <section>
          <h2>Women's Products</h2>
