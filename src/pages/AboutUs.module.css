@@ -1,7 +1,7 @@
 .gridContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     padding: 30px 200px 30px 200px;
 }
 
@@ -25,7 +25,6 @@
 
 .text {
     display: flex;
-    align-items: center;
     font-family: "Poppins", sans-serif;
     font-weight: 350;
     font-size: 20px;
