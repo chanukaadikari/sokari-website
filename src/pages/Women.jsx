@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import WomenProducts from '../components/product/women/WomenProducts'
 import womenProductsList from '../components/product/women/womenProductsList'
-import Footer from '../components/about/Footer'
+import Footer from '../components/footer/Footer'
 
 
 function createWomenProducts (womenProductsList) {

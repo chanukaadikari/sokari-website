@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../components/navbar/Navbar'
-import Footer from '../components/about/Footer'
+import Footer from '../components/footer/Footer'
+import Style from '../pages/Policy.module.css'
 
 function Policy () {
     return (
         <>
         <Navbar />
-            <main>
+            <main className={Style.gridContainer}>
                 <section>
                     <h2>Privacy Policy</h2>
                     <p>

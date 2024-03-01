@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import KidsProductList from '../components/product/kids/kidsProductsList'
 import KidsProducts from '../components/product/kids/KidsProducts'
-import Footer from '../components/about/Footer'
+import Footer from '../components/footer/Footer'
 
 function createKidsProduct (KidsProductList) {
   return <>

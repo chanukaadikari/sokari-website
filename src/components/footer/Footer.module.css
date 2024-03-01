@@ -40,7 +40,17 @@ a {
     color: #565c58;
 }
 
+.socialMedia {
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+}
+
 .facebookLogo {
+    width: 30px;
+    height: 30px;
+}
+.whatsappLogo {
     width: 30px;
     height: 30px;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import MenProducts from '../components/product/men/MenProducts'
 import menProductsList from '../components/product/men/menProductsList'
-import Footer from '../components/about/Footer'
+import Footer from '../components/footer/Footer'
 
 function createMenProducts (menProductList) {
    

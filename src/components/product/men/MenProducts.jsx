@@ -1,5 +1,5 @@
 import React from 'react-dom'
-import Style from './MenProducts.module.css'
+import Style from './menProducts.module.css'
 
 function MenProducts (props) {
 

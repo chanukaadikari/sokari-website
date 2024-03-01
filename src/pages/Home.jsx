@@ -7,7 +7,7 @@ import MenProducts from '../components/product/men/MenProducts'
 import menProductList from '../components/product/men/menProductsList'
 import KidsProducts from '../components/product/kids/KidsProducts'
 import KidsProductList from '../components/product/kids/kidsProductsList'
-import Footer from '../components/about/Footer'
+import Footer from '../components/footer/Footer'
 import Style from '../pages/Home.module.css'
 
 
@@ -56,7 +56,7 @@ function Home() {
         <div className={Style.overlay}></div>
         <div className={Style.photo}></div>
         <div className={Style.text}>
-        <p>Dress uniquely, express confidently, and let style define you beautifully</p>
+           <p className={Style.textColor}>Dress uniquely, express confidently, and let style define you beautifully</p>
         </div>
 
     </section>
