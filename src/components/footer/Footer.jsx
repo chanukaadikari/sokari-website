@@ -11,7 +11,7 @@ function Footer () {
         </section>
 
         <section className={Style.informationSection}>
-            <h2>About us</h2>           
+            <h2 >About us</h2>           
             <Link to="/aboutus">Our Company</Link>
             <p>Contact us</p> 
             <p>Hotline - 071 185 5027</p>
@@ -23,8 +23,6 @@ function Footer () {
               <img className={Style.whatsappLogo} src="../src/assets/socialmedia-icon/whatsapp.svg" alt="facebook" />
               </a>
             </div>
-           
-            
            
         </section>
 

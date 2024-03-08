@@ -11,6 +11,7 @@ import Footer from '../components/footer/Footer'
 import Style from '../pages/Home.module.css'
 
 
+
 function createWomenProducts (womenProductsList) {
   return (
     <WomenProducts 
