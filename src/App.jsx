@@ -7,7 +7,7 @@ import Kids from './pages/Kids';
 import AboutUs from './pages/AboutUs';
 import Policy from './pages/Policy';
 import Cart from './pages/Cart';
-import LogInSignUp from './pages/Login';
+import LogInSignUp from './pages/LogInSignUp';
 
 function App () {
 
@@ -19,11 +19,9 @@ function App () {
       <Route path='/kids' element={<Kids />} />
       <Route path='/aboutus' element={<AboutUs />} />
       <Route path='/policy' element={<Policy />} />
-      <Route path='/Cart' element={<Cart />} />
-      <Route path='/LoginSignup' element={<LogInSignUp />} />
+      <Route path='/cart' element={<Cart />} />
+      <Route path='/loginsignup' element={<LogInSignUp />} />
     </Routes>
-
-    
   )
   
 }
