@@ -3,7 +3,8 @@ let productList = [ {
     id: 1,
     img: "../src/assets/womenproduct/1.jpg",
     name: "Product 1",
-    price: "Rs 1200"
+    price: "Rs 1200",
+    link: "http://www.google.com/"
 },
 {
     id: 2,

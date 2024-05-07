@@ -20,24 +20,18 @@ function Navbar() {
                   <Link className={Styles.itemDesign} to="/kids">Kids</Link>
                </li>
                <li>
-                  <ScrollLink className={Styles.itemDesign} to="about" spy={true} smooth={true} offset={50} duration={1000}>About Us</ScrollLink>
-               </li> {/* 'About' is a scroll Id to scroll navbar to Footer*/}
+                  <Link className={Styles.itemDesign} to="/aboutus">About Us</Link>
+               </li> 
             </ul>
         </div>
 
-        <div className={Styles.leftSideNavBar}>
-            <div className={Styles.search}>
-               <span className="material-symbols-outlined" style={{ color: 'black' }}>search</span>
-               <form action="" method="">
-                  <label htmlFor="search"></label>
-                  <input className={Styles.searchInput} type="search" id="search" name="search" placeholder="SEARCH"/>   
-               </form>
-            </div>      
-                     
-         <a className={Styles.wishList} href=""><span className="material-symbols-outlined">favorite</span></a>
-         
-         <a className={Styles.shoppingCart} href=""><span className="material-symbols-outlined">shopping_cart</span></a>
-        </div>
+        <div className={Styles.navLoginCart}>
+            <button className={Styles.logIn}>Login</button>  
+            <a className={Styles.wishList} href=""><span className="material-symbols-outlined">favorite</span></a>
+            <Link className={Styles.shoppingCart} to="/cart"> <span className="material-symbols-outlined">shopping_cart</span> </Link>
+            <div className={Styles.navCartCount}>0</div>
+        </div> 
+        
      </nav>
   )
 }

@@ -3,23 +3,23 @@ import Navbar from '../components/navbar/Navbar'
 import WomenProducts from '../components/product/women/WomenProducts'
 import womenProductsList from '../components/product/women/womenProductsList'
 import Footer from '../components/footer/Footer'
-
-
-function createWomenProducts (womenProductsList) {
-  return (
-    <WomenProducts key={womenProductsList.id}
-    img={womenProductsList.img}
-    name={womenProductsList.name}
-    price={womenProductsList.price}
-    />
-  )
-}
+import Style from './Women.module.css'
 
 function Women() {
   return (
     <>
     <Navbar />
-    {womenProductsList.map(createWomenProducts)}
+    <div className= {Style.ProductList}>
+      {womenProductsList.map((womenProductsList) => {   
+        return (
+          <WomenProducts key={womenProductsList.id}
+          img={womenProductsList.img}
+          name={womenProductsList.name}
+          price={womenProductsList.price}/>
+      )
+      })}
+    </div>
+   
     <Footer />   
     </>
   )

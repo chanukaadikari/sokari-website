@@ -66,21 +66,28 @@ function Home() {
 
       <section className={Style.gridItems}>
           <h2 className={Style.heading} >Women's Collection</h2>
-          {womenProductsList.map(createWomenProducts).slice(0, 5)}
-          <Link className={Style.seeMore} to="/women" >SEE MORE</Link>          
+          <div className={Style.productItem}>
+            {womenProductsList.map(createWomenProducts).slice(0, 5)}  
+          </div>
+          <Link className={Style.seeMore} to="/women" >SEE MORE</Link>    
       </section>
 
       <section className={Style.gridItems}>
          <h2 className={Style.heading}>Men's Collection</h2>
+         <div className={Style.productItem}>
           {menProductList.map(createmenProducts).slice(0, 5)}
+         </div>
+          
          <Link className={Style.seeMore} to="/men" >SEE MORE</Link>
       </section> 
 
       <section className={Style.gridItem}>
          <h2 className={Style.heading}>Kid's Collection</h2>
-         {KidsProductList.map(createkidsProducts).slice(0, 5)}
+         <div className={Style.productItem}>
+          {KidsProductList.map(createkidsProducts).slice(0, 5)}  
+         </div>
          <Link className={Style.seeMore} to="/kids" >SEE MORE</Link> 
-      </section> 
+      </section>
       
     </main>
     

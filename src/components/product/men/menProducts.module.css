@@ -1,12 +1,16 @@
 
 .menProducts {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     gap: 5px;
-    margin: 25px 0px 25px 80px;    
 }
 
 .productImg {
     height: 300px;
     width: 200px;
+}
+
+.productImg:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
