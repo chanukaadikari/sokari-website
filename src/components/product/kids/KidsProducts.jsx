@@ -1,7 +1,6 @@
 import React from 'react'
 import Style from './KidsProducts.module.css'
 
-
 function KidsProducts (props) {
 
  return <>

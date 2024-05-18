@@ -1,5 +1,5 @@
 
-let productList = [ {
+let wormenProductList = [ {
     id: 1,
     img: "../src/assets/womenproduct/1.jpg",
     name: "Product 1",
@@ -48,4 +48,4 @@ let productList = [ {
 }
 ]
 
-export default productList;
+export default wormenProductList;

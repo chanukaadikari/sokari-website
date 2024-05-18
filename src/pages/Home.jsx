@@ -12,39 +12,6 @@ import Style from '../pages/Home.module.css'
 import Hero from '../components/hero/Hero'
 
 
-function createWomenProducts (womenProductsList) {
-  return (
-    <WomenProducts 
-      key={womenProductsList.id}
-      img={womenProductsList.img}
-      name={womenProductsList.name}
-      price={womenProductsList.price}
-    />
-  )
-}
-
-function createmenProducts (menProductsList) {
-  return (
-    <MenProducts 
-      key={menProductsList.id}
-      img={menProductsList.img}
-      name={menProductsList.name}
-      price={menProductsList.price}
-    />
-  )
-}
-
-function createkidsProducts (kidsProductsList) {
-  return (
-    <KidsProducts 
-      key={kidsProductsList.id}
-      img={kidsProductsList.img}
-      name={kidsProductsList.name}
-      price={kidsProductsList.price}
-    />
-  )
-}
-
 function Home() {
   return (
     <>
@@ -55,14 +22,23 @@ function Home() {
     <section>
       <Hero />
     </section> 
-    
-
+     
     <main className={Style.gridContainer}>
 
       <section className={Style.gridItems}>
           <h2 className={Style.heading} >Women's Collection</h2>
           <div className={Style.productItem}>
-            {womenProductsList.map(createWomenProducts).slice(0, 5)}  
+            {womenProductsList.map(
+              function createWomenProducts (womenProductsList) {
+                return (
+                  <WomenProducts 
+                    key={womenProductsList.id}
+                    img={womenProductsList.img}
+                    name={womenProductsList.name}
+                    price={womenProductsList.price}
+                  />
+                )
+              }).slice(0, 5)}  
           </div>
           <Link className={Style.seeMore} to="/women" >SEE MORE</Link>    
       </section>
@@ -70,7 +46,17 @@ function Home() {
       <section className={Style.gridItems}>
          <h2 className={Style.heading}>Men's Collection</h2>
          <div className={Style.productItem}>
-          {menProductList.map(createmenProducts).slice(0, 5)}
+          {menProductList.map(
+            function createmenProducts (menProductsList) {
+              return (
+                <MenProducts 
+                  key={menProductsList.id}
+                  img={menProductsList.img}
+                  name={menProductsList.name}
+                  price={menProductsList.price}
+                />
+              )
+            }).slice(0, 5)}
          </div>
           
          <Link className={Style.seeMore} to="/men" >SEE MORE</Link>
@@ -79,7 +65,17 @@ function Home() {
       <section className={Style.gridItem}>
          <h2 className={Style.heading}>Kid's Collection</h2>
          <div className={Style.productItem}>
-          {KidsProductList.map(createkidsProducts).slice(0, 5)}  
+          {KidsProductList.map(
+            function createkidsProducts (kidsProductsList) {
+              return (
+                <KidsProducts 
+                  key={kidsProductsList.id}
+                  img={kidsProductsList.img}
+                  name={kidsProductsList.name}
+                  price={kidsProductsList.price}
+                />
+              )
+            }).slice(0, 5)}  
          </div>
          <Link className={Style.seeMore} to="/kids" >SEE MORE</Link> 
       </section>

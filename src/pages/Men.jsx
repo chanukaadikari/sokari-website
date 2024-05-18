@@ -4,25 +4,28 @@ import MenProducts from '../components/product/men/MenProducts'
 import menProductsList from '../components/product/men/menProductsList'
 import Footer from '../components/footer/Footer'
 
-function createMenProducts (menProductList) {
-   
-  return (
-    <>
-      <MenProducts 
-        key={menProductList.id}
-        img={menProductList.img}
-        name={menProductList.name}
-        price={menProductList.price} />
-    </>
-  ) 
 
-}
+
+
 
 function Men() {
   return (
     <>
     <Navbar />
-    {menProductsList.map(createMenProducts)}
+    {menProductsList.map( function createMenProducts (menProductList) {
+   
+   return (
+            <>
+              <MenProducts 
+                key={menProductList.id}
+                id ={menProductList.id}
+                img={menProductList.img}
+                name={menProductList.name}
+                price={menProductList.price} />
+            </>
+          ) }
+
+    )}
     <Footer />
     </>
   )

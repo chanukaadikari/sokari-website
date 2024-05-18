@@ -1,0 +1,30 @@
+.LoginSignup { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.LogInSignUpContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.LogInSignUpFields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.LoginSignupAgree {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}

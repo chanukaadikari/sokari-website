@@ -4,12 +4,15 @@ import Footer from '../components/footer/Footer'
 import Style from '../pages/AboutUs.module.css'
 
 function AboutUs() {
+
+
   return <>
     <Navbar />
     <main>
       <section className={Style.gridContainer}>
 
         <h1 className={Style.heading}>Welcome to SOKARI</h1>
+        
 
         <p className={Style.text}>
           At Sokari, we believe that clothing is more than just fabric stitched together. it's a form of expression, a reflection of your personality, and a way to make a statement without saying a word. Our brand is built on the values of creativity, authenticity, and inclusivity.

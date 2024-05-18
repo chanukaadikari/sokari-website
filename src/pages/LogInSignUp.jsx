@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Style from './LoginSignUp.module.css'
 
 function LogInSignUp() {
   return (
@@ -12,7 +12,7 @@ function LogInSignUp() {
                 <input type="password" placeholder='password'/>
             </div>
             <button>Continue</button>
-            <p className={Style.LoginSignup}>Already have an account <span>Login here</span></p>
+            <p className={Style.LoginSignup}>Already have an account?<span>Login here</span></p>
             <div className={Style.LoginSignupAgree}>
                 <input type="checkbox" name='' id=''/>
                 <p>By continuing, i agree to use of terms & privacy policy.</p>
