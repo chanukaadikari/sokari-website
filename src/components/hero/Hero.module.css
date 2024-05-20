@@ -20,16 +20,16 @@
  
  .text {
      position: absolute;
+     font-family: "Merienda","poppins", sans-serif;
+     font-weight: 700;
      top: 50%;
      left: 35%;
      transform: translate(-50%, -50%); 
      text-align: center;
-     font-size: x-large;
+     font-size: 20px;
  }
  
- .textColor {
-     color: rgb(0, 0, 0);
- }
+ 
  
  /* if u need overlay on background image, Then use it 
  .overlay {

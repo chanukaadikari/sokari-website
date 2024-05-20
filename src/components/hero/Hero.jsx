@@ -7,8 +7,8 @@ const Hero = () => {
 
         <div className={Style.overlay}></div>
         <div className={Style.photo}></div>
-        <div className={Style.text}>
-           <p className={Style.textColor}>Dress uniquely, express confidently, and let style define you beautifully</p>
+        <div>
+           <p className={Style.text}>Dress uniquely, express confidently, and let style define you beautifully</p>
         </div>
 
     </section>

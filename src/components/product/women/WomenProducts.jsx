@@ -8,14 +8,11 @@ function WomenProducts (props) {
   return (
     <>
       <div className={Style.WomenProducts}>
-        <img className={Style.productImg} src={props.img} alt="product photo" /> 
+        <Link to={`/products/${props.id}`}><img className={Style.productImg} src={props.img} alt="product photo" /> </Link>
         <p className={Style.name}>{props.name}</p>
         <p>{props.price}</p>
         <span className="material-symbols-outlined">favorite</span>
-        <Link to={`/products/${props.id}`}>Add to Cart</Link>
-        
       </div>
-      
     </>
   )
 }

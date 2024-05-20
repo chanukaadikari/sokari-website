@@ -11,7 +11,6 @@ import Footer from '../components/footer/Footer'
 import Style from '../pages/Home.module.css'
 import Hero from '../components/hero/Hero'
 
-
 function Home() {
   return (
     <>
@@ -33,6 +32,7 @@ function Home() {
                 return (
                   <WomenProducts 
                     key={womenProductsList.id}
+                    id={womenProductsList.id}
                     img={womenProductsList.img}
                     name={womenProductsList.name}
                     price={womenProductsList.price}

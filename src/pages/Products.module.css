@@ -1,0 +1,165 @@
+.productsDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.productsDisplayLeft {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.productsDisplaytImgList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin-right: 20px ;
+    gap: 10px
+}
+
+.productsImg {
+    height: 142px;
+    width: 120px;
+}
+
+.productDisplayImg {
+    display: flex;
+}
+
+.productsDisplayMain{
+    height: 600px;
+    width: 400px;
+}
+
+.productsDisplayRight{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+.productName{
+    font-family: "poppins", sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    color: #000000;
+}
+
+.productNewPrice{
+    font-family: 'poppins', sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    color: #2e2e2e;
+}
+
+.productsDescription{
+    font-family: 'poppins', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    margin-right: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(233, 231, 231);  
+}
+
+.productSizesList {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.sizeHeader{
+    font-family: 'poppins', sans-serif;
+    font-size: large;
+    font-weight: 600;
+}
+
+.productSizes {
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.addToCartContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 50px;
+    
+}
+
+.minusBtn{
+    background-color: gold;
+    font-family: 'poppins', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: none;
+
+}
+.plusBtn{
+    font-family: 'poppins', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin-left: -45px;
+    border: none;
+    background-color: rgb(254, 223, 47);
+
+}
+
+.productQuantityDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin-left: -45px;
+    border: none;
+    background-color: #ededed;
+}
+
+.addToCartBtn{
+    background-color: #000000;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 5px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-left: -20px;
+    border: none;
+}
+
+.otherWomenProductContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
