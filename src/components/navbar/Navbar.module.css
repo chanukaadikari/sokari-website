@@ -31,16 +31,12 @@
 .menuItems {
     display: flex;
     list-style: none;
-    gap: 30px;
-    
-    
+    gap: 30px;  
 }
 
 .itemDesign {
-    
     text-decoration: none;
     color:rgb(207, 206, 206) ;
-    
 }     
 
  .itemDesign::after{
@@ -54,7 +50,7 @@
  }
 
  .menuItems:hover .itemDesign {
-   
+
     color: rgb(80, 80, 80);
 }
 
@@ -70,8 +66,7 @@
 
 .navLoginCart {
     display: flex;
-    gap: 20px;
-    
+    gap: 20px;   
 }
 
 .wishList {

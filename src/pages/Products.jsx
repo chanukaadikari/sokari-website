@@ -7,13 +7,14 @@ import Footer from '../components/footer/Footer'
 import womenProductsList from '../components/product/women/womenProductsList'
 import WomenProducts from '../components/product/women/WomenProducts'
 
-
 function Products() {
 
-   const{womenProductList} = useContext(ProductsContext)
+   const{womenProductList,menProductList,kidsProductList} = useContext(ProductsContext)
    const {productsId} = useParams()
-   const product = womenProductList.find ( e => e.id === parseInt(productsId) )
-   const {name, price, img, description} = product
+   const product = womenProductList.find ( e => e.id === parseInt(productsId)) || 
+                   menProductList.find ( e => e.id === parseInt(productsId)) 
+                   menProductList.find ( e => e.id === parseInt(productsId)) 
+   const {name, price, img: { img01,img02,img03,img04,img05 } , description, img} = product
 
   return (      
     <>
@@ -21,13 +22,13 @@ function Products() {
       <div className={Style.productsDisplay}>
         <div className={Style.productsDisplayLeft}>
           <div className={Style.productsDisplaytImgList}>
-            <img className={Style.productsImg} src={img} alt="" />
-            <img className={Style.productsImg} src={img} alt="" />
-            <img className={Style.productsImg} src={img} alt="" />
-            <img className={Style.productsImg} src={img} alt="" />
+            <img className={Style.productsImg} src={img02} alt="" />
+            <img className={Style.productsImg} src={img03} alt="" />
+            <img className={Style.productsImg} src={img04} alt="" />
+            <img className={Style.productsImg} src={img05} alt="" />
           </div>
           <div className={Style.productDisplayImg}>
-            <img className={Style.productsDisplayMain} src={img} alt="" />
+            <img className={Style.productsDisplayMain} src={img01} alt="" />
           </div>
         </div>
         <div className={Style.productsDisplayRight}>
@@ -54,9 +55,10 @@ function Products() {
       </div>
       <div>
         <div >
-          <h2>Recommended Products</h2>
+          <h2 className={Style.recomendedProductsHeader}>Recommended Products</h2>
           <div className={Style.otherWomenProductContainer}>
-                {womenProductsList.map((womenProductsList) => {   
+              {
+              womenProductsList.map((womenProductsList) => {
                 return ( 
                   <WomenProducts key={womenProductsList.id}
                   img={womenProductsList.img}
@@ -66,6 +68,8 @@ function Products() {
                   />)
               }).slice(1,7)}  
           </div>
+
+          
           
         </div>
       </div>

@@ -28,10 +28,10 @@ function Footer () {
 
         <section className={Style.policySection}>
             <h2>Policies</h2>
-            <Link to="/policy">Privercy Policy</Link>
-            <Link to="/policy">Delivery Policy</Link>
-            <Link to="/policy">Return & Exchange Policy</Link>
-            <Link to="/policy" >Terms and Conditions</Link>  
+            <Link className={Style.policies} to="/policy">Privercy Policy</Link>
+            <Link className={Style.policies} to="/policy">Delivery Policy</Link>
+            <Link className={Style.policies} to="/policy">Return & Exchange Policy</Link>
+            <Link className={Style.policies}to="/policy" >Terms and Conditions</Link>  
         </section>
 
       </footer>  

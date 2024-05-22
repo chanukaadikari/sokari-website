@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family:  "kanit",'poppins', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: #565c58;
@@ -15,35 +15,45 @@
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 50PX;
-    text-decoration: none;
     font-family: 'Protest Riot', sans-serif;
-    color: #000000
-    
+    font-size: 50PX;
+    color: #000000;
+    text-decoration: none;
+
 }
 
 .informationSection {
+    font-family: "kanit",'poppins', sans-serif;
     display: inline-flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .policySection {
+    font-family: "kanit",'poppins', sans-serif;
     display: inline-flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
+.policies {
+    font-family: "kanit",'poppins', sans-serif;
+    font-weight: 300px;
+    font-size: 20px;
+}
 /* Clear link underline decoration on 'Link & a' element */ 
 a {
     text-decoration: none;
-    color: #565c58;
+    color: #505050;
 }
 
 .socialMedia {
    display: flex;
    flex-direction: row;
+   justify-content: start;
+   align-items: center;
    gap: 20px;
+   margin-top: 5px;
 }
 
 .facebookLogo {

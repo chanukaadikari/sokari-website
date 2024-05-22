@@ -7,7 +7,7 @@ function KidsProducts (props) {
   <div className={Style.kidsProducts }>
     <img className={Style.productImg} src={props.img} alt="kids Products"/>
     <p>{props.name}</p>
-    <p>{props.price}</p>
+    <p className={Style.productPrice}>{props.price}</p>
     <span className="material-symbols-outlined">favorite</span>
   </div>
  </>

@@ -8,7 +8,7 @@ function MenProducts (props) {
         <div className={Style.menProducts}>
           <img className={Style.productImg} src={props.img} alt="Men Products" />
           <p>{props.name}</p>
-          <p>{props.price}</p>
+          <p className={Style.productPrice}>{props.price}</p>
           <span className="material-symbols-outlined">favorite</span> 
         </div>
         </>
