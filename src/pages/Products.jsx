@@ -4,18 +4,18 @@ import { useParams } from 'react-router-dom'
 import Style from './Products.module.css'
 import Navbar from '../components/navbar/Navbar'   
 import Footer from '../components/footer/Footer'
-import womenProductsList from '../components/product/women/womenProductsList'
-import WomenProducts from '../components/product/women/WomenProducts'
+import recommendedProducts from '../utils/recommendedProducts'
+
 
 function Products() {
 
-   const{womenProductList,menProductList,kidsProductList} = useContext(ProductsContext)
-   const {productsId} = useParams()
-   const product = womenProductList.find ( e => e.id === parseInt(productsId)) || 
-                   menProductList.find ( e => e.id === parseInt(productsId)) 
-                   menProductList.find ( e => e.id === parseInt(productsId)) 
-   const {name, price, img: { img01,img02,img03,img04,img05 } , description, img} = product
-
+  const{womenProductList,menProductList,kidsProductList} = useContext(ProductsContext)
+  const {productsId} = useParams()
+  const product = womenProductList.find ( e => e.id === parseInt(productsId)) || 
+                   menProductList.find ( e => e.id === parseInt(productsId)) ||
+                   kidsProductList.find ( e => e.id === parseInt(productsId)) 
+  const {name, price, img: { img01,img02,img03,img04,img05 } , description, img} = product
+  
   return (      
     <>
       <Navbar />
@@ -56,7 +56,12 @@ function Products() {
       <div>
         <div >
           <h2 className={Style.recomendedProductsHeader}>Recommended Products</h2>
-          <div className={Style.otherWomenProductContainer}>
+
+          <div>
+            {recommendedProducts()}
+          </div>
+
+     {/*     <div className={Style.otherWomenProductContainer}>
               {
               womenProductsList.map((womenProductsList) => {
                 return ( 
@@ -67,9 +72,13 @@ function Products() {
                   id={womenProductsList.id}
                   />)
               }).slice(1,7)}  
-          </div>
+            </div> */}
 
-          
+          <div>
+            
+            
+            
+          </div>
           
         </div>
       </div>

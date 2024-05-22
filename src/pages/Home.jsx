@@ -51,6 +51,7 @@ function Home() {
               return (
                 <MenProducts 
                   key={menProductsList.id}
+                  id={menProductsList.id}
                   img={menProductsList.img}
                   name={menProductsList.name}
                   price={menProductsList.price}
