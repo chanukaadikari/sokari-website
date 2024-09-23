@@ -6,14 +6,13 @@ import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
 import recommendedProducts from '../utils/recommendedProducts'
 
-
 function Products() {
 
-  const{womenProductList,menProductList,kidsProductList} = useContext(ProductsContext)
+  const{womenProductList,menProductList} = useContext(ProductsContext)
   const {productsId} = useParams()
   const product = womenProductList.find ( e => e.id === parseInt(productsId)) || 
-                   menProductList.find ( e => e.id === parseInt(productsId)) ||
-                   kidsProductList.find ( e => e.id === parseInt(productsId)) 
+                   menProductList.find ( e => e.id === parseInt(productsId)) 
+                                  
   const {name, price, img: { img01,img02,img03,img04,img05 } , description, img} = product
   
   return (      
@@ -49,7 +48,6 @@ function Products() {
               <p className={Style.productQuantityDisplay}>0</p>
               <button className={Style.plusBtn}>+</button>
               <button className={Style.addToCartBtn}>Add to cart</button>
-              <span className="material-symbols-outlined">favorite</span>
           </div>
         </div>
       </div>
@@ -60,26 +58,6 @@ function Products() {
           <div>
             {recommendedProducts()}
           </div>
-
-     {/*     <div className={Style.otherWomenProductContainer}>
-              {
-              womenProductsList.map((womenProductsList) => {
-                return ( 
-                  <WomenProducts key={womenProductsList.id}
-                  img={womenProductsList.img}
-                  name={womenProductsList.name}
-                  price={womenProductsList.price}
-                  id={womenProductsList.id}
-                  />)
-              }).slice(1,7)}  
-            </div> */}
-
-          <div>
-            
-            
-            
-          </div>
-          
         </div>
       </div>
       <Footer/>

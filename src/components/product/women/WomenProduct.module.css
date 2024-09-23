@@ -1,8 +1,8 @@
 
 .WomenProducts {
-    font-family: "Roboto Condensed","poppins", sans-serif;
+    font-family: "Source Code Pro","poppins", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     align-items: start; 
@@ -10,8 +10,8 @@
 }
 
 .productImg {
-    height: 300px;
-    width: 200px;
+    height: 400px;
+    width: 300px;
 }
 
 .productImg:hover {
@@ -20,7 +20,7 @@
 }
 
 .productPrice{
-    font-family: "Roboto Condensed","poppins", sans-serif;
+    font-family: "Source Code Pro","poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: rgb(58, 58, 58);

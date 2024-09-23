@@ -5,8 +5,8 @@ import WomenProducts from '../components/product/women/WomenProducts'
 import womenProductsList from '../components/product/women/womenProductsList'
 import MenProducts from '../components/product/men/MenProducts'
 import menProductList from '../components/product/men/menProductsList'
-import KidsProducts from '../components/product/kids/KidsProducts'
-import KidsProductList from '../components/product/kids/kidsProductsList'
+
+
 import Footer from '../components/footer/Footer'
 import Style from '../pages/Home.module.css'
 import Hero from '../components/hero/Hero'
@@ -23,7 +23,6 @@ function Home() {
     </section> 
      
     <main className={Style.gridContainer}>
-
       <section className={Style.gridItems}>
           <h2 className={Style.heading} >Women's Collection</h2>
           <div className={Style.productItem}>
@@ -61,26 +60,7 @@ function Home() {
          </div>
           
          <Link className={Style.seeMore} to="/men" >SEE MORE</Link>
-      </section> 
-
-      <section className={Style.gridItem}>
-         <h2 className={Style.heading}>Kid's Collection</h2>
-         <div className={Style.productItem}>
-          {KidsProductList.map(
-            function createkidsProducts (kidsProductsList) {
-              return (
-                <KidsProducts 
-                  key={kidsProductsList.id}
-                  img={kidsProductsList.img}
-                  name={kidsProductsList.name}
-                  price={kidsProductsList.price}
-                />
-              )
-            }).slice(0, 5)}  
-         </div>
-         <Link className={Style.seeMore} to="/kids" >SEE MORE</Link> 
-      </section>
-      
+      </section>       
     </main>
     
     <footer>

@@ -2,7 +2,6 @@ import React from 'react'
 import Style from './WomenProduct.module.css'
 import { Link } from 'react-router-dom'
 
-
 function WomenProducts (props) {
  
   return (

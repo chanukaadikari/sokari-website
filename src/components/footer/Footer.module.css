@@ -4,9 +4,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 50px;
-    font-family:  "kanit",'poppins', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
     color: #565c58;
     background-color: #e4e4e4;
 }
@@ -23,24 +20,24 @@
 }
 
 .informationSection {
-    font-family: "kanit",'poppins', sans-serif;
+    font-family: "Nunito Sans",'poppins', sans-serif;
     display: inline-flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .policySection {
-    font-family: "kanit",'poppins', sans-serif;
+    font-family: 'Nunito Sans','poppins', sans-serif;
     display: inline-flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .policies {
-    font-family: "kanit",'poppins', sans-serif;
+    font-family: "Nunito Sans",'poppins', sans-serif;
     font-weight: 300px;
-    font-size: 20px;
 }
+
 /* Clear link underline decoration on 'Link & a' element */ 
 a {
     text-decoration: none;
